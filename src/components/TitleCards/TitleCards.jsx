@@ -30,6 +30,8 @@ useEffect(() => {
   cardsRef.current.addEventListener('wheel',handleWheel);
 },[])
 
+
+
   
   return (
     <div className='title-cards'>
@@ -43,6 +45,9 @@ useEffect(() => {
       })}
      </div>
     </div>
+
+
+
   )
 }
 

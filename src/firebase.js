@@ -3,6 +3,12 @@ import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword } f
 import { signOut } from "firebase/auth";
 import { addDoc, collection, getFirestore } from "firebase/firestore";
 import { toast } from "react-toastify";
+
+
+
+
+
+
 const firebaseConfig = {
   apiKey: "AIzaSyDLtWxiyEPvixnbA8ZOP4BD56HYcEiRDP8",
   authDomain: "netflix-clone-9a31f.firebaseapp.com",
@@ -34,6 +40,8 @@ const signup = async (name,email,password)=>{
    }
 }
 
+
+  
 const login = async (email,password)=>{
    try {
    await signInWithEmailAndPassword(auth,email,password)
